@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: myapp
+spec: 
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myapp
+  template: 
+    metadata: 
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: myapp
+          image: selimhorri/employees-simple-management:3.0
+          resources: 
+            limits: 
+              memory: "512Mi"
+              cpu: "500m"
+          ports: 
+          - containerPort: 8080
