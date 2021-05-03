@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: selimhorri/employees-simple-management:3.0
+          image: selimhorri/employee-simple-management:3.0
           resources: 
             limits: 
               memory: "512Mi"
