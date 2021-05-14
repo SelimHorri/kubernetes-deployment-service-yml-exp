@@ -1,2 +1,2 @@
 kubectl get pods;
-kubectl apply -f deployment.yml
+kubectl apply -f deployment.yml;
